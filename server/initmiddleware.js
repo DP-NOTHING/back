@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 
 function setupMiddlewares(app){
     app.use(cors({
-        origin: `${process.env.FRONTEND_URL}`,
+        origin: [`${process.env.FRONTEND_URL}`,"https://sheetbase.vercel.app"],
         methods: ["GET", "POST", "PUT", "DELETE"],
     }));
     app.use(morgan("dev"));
