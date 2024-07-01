@@ -4,7 +4,10 @@
         {
             "src":"./app.js",
             "use":"@vercel/node",
-            "config": { "includeFiles": ["dist/**"] }
+            "config": { "includeFiles": ["dist/**"],
+        "override": {
+                    "installCommand": "npm install"
+                } }
         }
     ],
     "routes":[
