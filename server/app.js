@@ -127,15 +127,7 @@ app.post("/upload-files-contact", upload.single("file"), async (req, res) => {
   });
  
 });
-app.get("/", async (req, res) => {
-  try {
-    const company = await Company.find();
-    console.log("Candidates:", candidates);
-  } catch (error) {
-    console.log(error);
-    res.status(500).send("Internal Server Error");
-  }
-});
+
 
 app.get("/", (req, res) => res.send("Hello World"));
 
