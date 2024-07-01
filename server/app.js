@@ -129,7 +129,7 @@ app.post("/upload-files-contact", upload.single("file"), async (req, res) => {
 });
 
 
-app.get("/", (req, res) => res.send("Hello World"));
+app.get("/test", (req, res) => res.send("Hello World"));
 
 const PORT = process.env.PORT;
 app.listen(PORT, async () => {
